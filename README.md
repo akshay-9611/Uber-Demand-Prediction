@@ -95,7 +95,3 @@ The model is evaluated using **MAPE** (Mean Absolute Percentage Error) on March 
 - Data covers pickup locations within NYC boundaries (40.60-40.85 lat, -74.05 to -73.70 long)
 - Fare range: $0.50 - $81.00
 - Trip distance: 0.25 - 24.43 miles
-
----
-
-*Built by Campus X*
