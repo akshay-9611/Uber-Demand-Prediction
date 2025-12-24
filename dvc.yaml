@@ -3,7 +3,7 @@ stages:
     cmd: python ./src/data/data_ingestion.py
     deps:
       - ./src/data/data_ingestion.py
-  
+
   extract_features:
     cmd: python ./src/features/extract_features.py
     deps: 
@@ -17,3 +17,12 @@ stages:
       - ./data/processed/resampled_data.csv
       - ./models/scaler.joblib
       - ./models/mb_kmeans.joblib
+
+  feature_processing:
+    cmd: python ./src/features/feature_processing.py
+    deps:
+      - ./src/features/feature_processing.py
+      - ./data/processed/resampled_data.csv
+    outs:
+      - ./data/processed/train.csv
+      - ./data/processed/test.csv
