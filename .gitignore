@@ -6,6 +6,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+*.csv
+
 .Python
 env/
 build/
